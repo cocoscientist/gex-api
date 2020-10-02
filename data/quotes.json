@@ -1,0 +1,27 @@
+[
+    {
+        "id":0,
+        "level":"Toon TV",
+        "quote":"Hey! I feel like I'm trapped in Boy George's pants!"
+    },
+    {
+        "id":1,
+        "level":"Toon TV",
+        "quote":"This is like a luau at Mel Blanc's house!"
+    },
+    {
+        "id":2,
+        "level":"Scream TV",
+        "quote":"Reminds me of Halloween at Rip Taylor's."
+    },
+    {
+        "id":3,
+        "level":"Scream TV",
+        "quote":"Has anyone seen Carol-Anne in here?"
+    },
+    {
+        "id":4,
+        "level":"Scream TV",
+        "quote":"Who forgot to pay the gravity bill?"
+    }
+]
