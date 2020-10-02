@@ -8,3 +8,7 @@ Following is the format in which a quote is stored
         "quote":<Main Quote>
     }
 ```
+### Planned Route
+- [X] Lay down basic code for the API
+- [ ] Make API respond to basic requests
+- [ ] Provide filtered quotes
