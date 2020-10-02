@@ -1,5 +1,5 @@
-##An API for Gex Quotes!
-This API serves to return quotes from the game *Gex - Enter the Gecko!*
+## An API for Gex Quotes!
+This API serves to return quotes from the game *Gex - Enter the Gecko!* <br />
 Following is the format in which a quote is stored
 ```
     {
