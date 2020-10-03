@@ -1,10 +1,31 @@
 const quotes = require('../data/quotes.json');
 
 exports.getQuotes = (req,res,next) =>{
-    res.status(200).json(quotes);
-    next();
+    const q = req.query;
+    if(q.hasOwnProperty('level')){
+        quotes.forEach(quote => {
+            if(quote.level==q.level){
+                res.json(quote.quotes);
+                next();
+            }
+        });
+    }else{
+        res.json(quotes);
+        next();
+    }
 };
 exports.getRandom = (req,res,next) =>{
-    res.status(200).json(quotes[Math.floor(Math.random()*quotes.length)]);
-    next();
+    const q = req.query;
+    if(q.hasOwnProperty('level')){
+        quotes.forEach(quote => {
+            if(quote.level==q.level){
+                const qr = quote.quotes;
+                res.json(qr[Math.floor(Math.random()*qr.length)]);
+                next();
+            }
+        });
+    }else{
+        res.json(quotes[Math.floor(Math.random()*quotes.length)]);
+        next();
+    }
 };
