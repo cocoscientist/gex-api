@@ -25,7 +25,8 @@ exports.getRandom = (req,res,next) =>{
             }
         });
     }else{
-        res.json(quotes[Math.floor(Math.random()*quotes.length)]);
+        const qlr = quotes[Math.floor(Math.random()*quotes.length)].quotes;
+        res.json(qlr[Math.floor(Math.random()*qlr.length)]);
         next();
     }
 };
