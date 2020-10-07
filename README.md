@@ -1,14 +1,14 @@
 ## An API for Gex Quotes!
 This API serves to return quotes from the game *Gex - Enter the Gecko!* <br />
-Following is the format in which a quote is stored
+Quotes are stored in an array of objects of the format
 ```
     {
-        "id":<Item ID>,
-        "level":<Level Name>,
-        "quote":<Main Quote>
+        "level":<level name - String>,
+        "quotes":<Quotes list from level - array of Strings>
     }
 ```
-### Planned Route
-- [X] Lay down basic code for the API
-- [ ] Make API respond to basic requests
-- [ ] Provide filtered quotes
+### Features
+- Return all the quotes by going to /api/quote
+- Return all the quotes from a level by going to /api/quote?level="level name"
+- Return a random quote by going to /api/quote/random
+- Return a random quote from a particular level by going to /api/quote/random?level="level name"
