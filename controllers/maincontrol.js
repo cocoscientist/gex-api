@@ -30,3 +30,9 @@ exports.getRandom = (req,res,next) =>{
         next();
     }
 };
+
+exports.getRandomLevel = (req,res,next) =>{
+    const rq = quotes[Math.floor(Math.random()*quotes.length)];
+    res.json(rq);
+    next();
+}
