@@ -10,5 +10,6 @@ Quotes are stored in an array of objects of the format
 ### Features
 - Return all the quotes by going to /api/quote
 - Return all the quotes from a level by going to /api/quote?level="level name"
-- Return a random quote by going to /api/quote/random
-- Return a random quote from a particular level by going to /api/quote/random?level="level name"
+- Return a random quote by going to /api/random
+- Return a random quote from a particular level by going to /api/random?level="level name"
+- Return an object containing a random level and quotes from that level by going to /api/level
